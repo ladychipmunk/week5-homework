@@ -1,18 +1,20 @@
 <h3>hello world!</h3>
 <h3>CONTACT ME</h3>
 
-<form> 
+<form ng-app="" ng-controller="homeController" apply-class="css-class"> 
 
-<h3>Name</h3>
-<input type="text">
+<h3>Name <input type="text" ng-model="firstName"></h3>
 
-<h3>Surname</h3>
-<input type="text">
 
-<h3>Email Adress</h3>
-<input type="text">
+<h3>Surname<input type="text" ng-model="lastName">
+</h3>
+
+<h3>Email Adress <input type="text" ng-model="email"></h3>
+
 
 <input type="submit">
 
 
 </form>
+
+

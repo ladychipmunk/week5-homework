@@ -1,4 +1,4 @@
-angular.module('app')
+var app= angular.module('app')
 .controller('blogController', ['$scope', function($scope) {
-   $scope.posts=["an", "array", "of", "posts"];
+   $scope.names=["Laura", "Ana", "Daniel", "Tomas", "Kate"];
 }]);

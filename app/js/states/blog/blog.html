@@ -1,25 +1,25 @@
-<!--body>
-
-<div>
-     <h3>
-        Test
-      </h3>
-</div>
 
 
+<body>
 
-</body-->
+<div ng-app="app" ng-controller="blogController as bc">
 
+ 	<ul>
 
+ 		<li ng-repeat="x in names">
 
-<body ng-controller="blogController as bc">
+ 		{{x}}
 
-<div ng-repeat="post in bc.posts">
-     <h3>
-        {{post}}
-      </h3>
+ 		</li>
+ 	</ul>
+     
 </div>
 
 
 
 </body>
+
+
+
+
+

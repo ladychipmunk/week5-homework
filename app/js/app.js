@@ -19,10 +19,9 @@ var app = angular.module('app',['ui.router'])
     name:"link3",
     url: "/link3",
     templateUrl: "js/states/link3/link3.html",
-    controller: function($scope){
-      $scope.things=["A", "set", "of", "things"];
+    controller:"link3"
+          
     }
-  }
 
     var blogState = {
     name: 'blog',
