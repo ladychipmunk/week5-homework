@@ -1,21 +1,7 @@
-angular.module('app').directive('didMinLength', function () {
-
+angular.module('app')
+.directive('helloDirective', function () {
     return {
-        restrict: 'EA',
-        scope:{
-           text: '='
-        },
-        controller: function ($scope, $element) {
-            $scope.$watch('text', function() {
-                if ($scope.text.length > 30) {
-                    $element.addClass('not-valid');
-                    $element.removeClass('is-valid');
-                } else{
-                    $element.addClass('is-valid');
-                    $element.removeClass('not-valid');
-                }
-            });
-        }
-    }
+        template:'<h2>HELLO</h2>'
+    };
 })
 
